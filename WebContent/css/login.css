@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+#container{
+	padding-top: 140px;
+}
+
+.title-wrap{
+	padding-bottom: 28px;
+	border-bottom: 2px solid #111;
+}
+.title-wrap .title-login{
+	font-size: 32px;
+	color: #111;
+	font-weight: 400;
+}
+.title-wrap .depth-area{
+	position: absolute;
+	right: 0px;
+	top: 16px;
+}
+.title-wrap .depth-area ol li {
+	display: inline-block;
+	font-size: 13px;
+	color: #888888;
+}
+

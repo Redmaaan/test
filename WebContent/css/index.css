@@ -1,0 +1,284 @@
+/* container */
+
+#container{
+    padding-top: 140px;
+}
+#container .main {
+    position: relative;
+}
+.main > article{
+    position: relative;
+    display: block;
+}
+
+    /* visual area */
+.main .visual-area .visual-slider{
+    height: 495px;
+    overflow: hidden;
+}
+.slide-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-prev{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    width: 65px;
+    height: 65px;
+    background-color: transparent;
+    font-size: 0;
+    left: 85px;
+    background-image: url(../images/icons/arrow-left.png);
+    background-size: 65px;
+    z-index: 5;
+}
+.slick-next{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    width: 65px;
+    height: 65px;
+    background-color: transparent;
+    font-size: 0;
+    right: 85px;
+    background-image: url(../images/icons/arrow-right.png);
+    background-size: 65px;
+    z-index:5;
+}
+/* .slide-list .cafe{
+    display: block;
+    height: 495px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/event/cafe.jpg);
+    background-repeat: no-repeat;
+} */
+.visual-slider{
+    height: 495px;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.slide-list{
+    display: flex;
+    transition: .5s ease-out;
+    height: 100%;
+    
+}
+.slide-list .inner{
+    padding: 0 16px;
+}
+.slide-list .inner .slide1{
+    display: block;
+    height: 495px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/event/cafe1.jpg);
+    background-repeat: no-repeat;
+}
+.slide-list .inner .slide2{
+    display: block;
+    height: 495px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/event/cafe2.jpg);
+    background-repeat: no-repeat;
+}
+.slide-list .inner .slide3{
+    display: block;
+    height: 495px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/event/cafe3.jpg);
+    background-repeat: no-repeat;
+}
+
+
+    /* delievery area */
+
+.main .delivery-area .item-wrap{
+    display: flex;
+    width: 100%;
+    height: 280px;
+    padding-top: 56px;
+}
+.main .delivery-area .item-wrap .item{
+    flex: 1;
+    padding-left: 70px;
+    text-align: left;
+}
+.icon-delievery{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/items/delievery.png);
+}
+.icon-takeout{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/items/takeout.png);
+}
+.icon-quick{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/items/quick.png);
+}
+.main .delivery-area .item-wrap .item > a{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 54px;
+}
+.main .delivery-area .item-wrap .item > a > span{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 42px;
+    color: red;
+    letter-spacing: -4px;
+}
+.main .delivery-area .item-wrap .item:nth-of-type(2) > a > span{
+    color: blue;
+}
+.main .delivery-area .item-wrap .item:nth-of-type(3) > a > span{
+    color: black;
+}
+.main .delivery-area .item-wrap .item > a .arrow{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-left: 9px;
+    background: red;
+    border-radius: 100%;
+    border: 0;
+}
+.main .delivery-area .item-wrap .item:nth-of-type(2) > a .arrow{
+    background: blue;
+}
+.main .delivery-area .item-wrap .item:nth-of-type(3) > a .arrow{
+    background: black;
+}
+.main .delivery-area .item-wrap .item > a .arrow:after{
+    content: ' ';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-style: solid;
+    border-color: transparent #fff #fff transparent;
+    border-width: 0 2px 2px 0;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 11px;
+    left: -4px;
+    right: 0;
+    margin: 0 auto;
+}
+
+    /* product area */
+
+.main .product-area .product-wrap{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    padding-top: 56px;
+}
+.main .product-area .product-wrap .product{
+    flex: 1;
+    text-align: left;
+}
+
+.main .product-area .product-wrap .product > a{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.main .product-area .product-wrap .product > a .product{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.main .product-area .product-wrap .product > a .inner-text{
+    position: absolute;
+    padding-top: 20px;
+    top: 8px;  
+}
+    /* banner area */
+
+.main .banner-area{
+    display: relative;
+    padding: 80px 0;
+    border-bottom: 1px solid rgba(88, 88, 88, 0.3)
+}
+.main .banner-area .banner{
+    display: relative;
+    padding: 0 70px;
+    width: 100%;
+    
+}
+.main .banner-area .banner{
+    display: flex;
+}
+.main .banner-area .banner > a{
+    flex: 1;
+}
+.main .banner-area .banner > a .icon-banner1{
+    display: block;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/banner/coffee.png);
+    background-size: 200px;
+}
+.main .banner-area .banner > a .icon-banner2{
+    display: block;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/banner/coffee-cup.png);
+    background-size: 200px;
+}
+.main .banner-area .banner > a .icon-banner3{
+    display: block;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/banner/beans.png);
+    background-size: 200px;
+}
+.main .banner-area .banner > a .icon-banner4{
+    display: block;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/banner/sandwich.png);
+    background-size: 200px;
+}
+
+
+
